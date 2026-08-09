@@ -34,6 +34,30 @@ const ArrowLink = ({ href, children, external = false }) => (
   </a>
 );
 
+const ContactButton = () => {
+  const [copied, setCopied] = useState(false);
+  const subject = encodeURIComponent('婚宴問題｜許秉鈞與蔡禹玟');
+
+  const handleClick = async () => {
+    try {
+      await navigator.clipboard.writeText(event.email);
+      setCopied(true);
+    } catch {
+      // Clipboard access is optional; the mail link below still works.
+    }
+    window.location.href = `mailto:${event.email}?subject=${subject}`;
+  };
+
+  return (
+    <>
+      <button className="button button-light" type="button" onClick={handleClick}>
+        {copied ? '信箱已複製' : '聯絡新人'}
+      </button>
+      <a className="contact-email" href={`mailto:${event.email}`}>{event.email}</a>
+    </>
+  );
+};
+
 function App() {
   const [photos, setPhotos] = useState([]);
 
@@ -183,7 +207,7 @@ function App() {
             <p className="eyebrow">2026 · 12 · 27</p>
             <h2>期待在台北見到你</h2>
             <p>如果有任何婚宴相關問題，歡迎來信與我們聯絡。</p>
-            <a className="button button-light" href="mailto:aw33neihu@gmail.com">聯絡新人</a>
+            <ContactButton />
           </div>
         </section>
       </main>

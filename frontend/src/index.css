@@ -165,6 +165,7 @@ blockquote cite { color: var(--red); display: block; font-size: 0.78rem; font-st
 .closing-section h2 { color: var(--white); font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 500; letter-spacing: 0.08em; line-height: 1.4; }
 .closing-section p:not(.eyebrow) { font-size: 0.92rem; margin-top: 14px; opacity: 0.82; }
 .closing-section .button { margin-top: 30px; }
+.contact-email { border-bottom: 1px solid rgba(255, 253, 249, 0.55); font-size: 0.8rem; margin-top: 16px; opacity: 0.82; padding-bottom: 2px; }
 .site-footer { color: var(--muted); display: flex; font-size: 0.72rem; justify-content: space-between; letter-spacing: 0.08em; padding: 25px 32px; }
 
 @media (max-width: 760px) {
