@@ -146,6 +146,24 @@ function App() {
           <p className="family-note">謝謝家人一路上的支持與陪伴，讓我們能放心走向人生的下一站。</p>
         </Section>
 
+        <Section eyebrow="留下一段影像" title="影片" className="section-tint">
+          <div className="video-card">
+            <div className="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/I3sfu55HY64"
+                title="許秉鈞與蔡禹玟的婚禮影片"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+            <a className="video-link" href="https://www.youtube.com/watch?v=I3sfu55HY64" target="_blank" rel="noreferrer">
+              在 YouTube 開啟影片 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </Section>
+
         <Section id="gallery" eyebrow="一些我們很喜歡的日子" title="照片">
           <div className="gallery-grid">
             {photos.length > 0 ? photos.map((src, index) => (
