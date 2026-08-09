@@ -146,7 +146,7 @@ function App() {
           <p className="family-note">謝謝家人一路上的支持與陪伴，讓我們能放心走向人生的下一站。</p>
         </Section>
 
-        <Section eyebrow="留下一段影像" title="影片" className="section-tint">
+        <Section eyebrow="留下一段影像" title="《掀頭紗》MV 搶先看" className="section-tint">
           <div className="video-card">
             <div className="video-frame">
               <iframe
