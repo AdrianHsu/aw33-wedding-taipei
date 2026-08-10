@@ -65,7 +65,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .hero-photo {
-  background: linear-gradient(90deg, rgba(43, 24, 22, 0.64), rgba(43, 24, 22, 0.28)), url('/photos/DSC04155.jpg') center 60% / cover;
+  background: linear-gradient(90deg, rgba(43, 24, 22, 0.64), rgba(43, 24, 22, 0.28)), url('/photos/0513%20Saratoga/DSC04155.jpeg') center 60% / cover;
   inset: 0;
   opacity: 0.88;
   position: absolute;
