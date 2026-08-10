@@ -171,6 +171,7 @@ function App() {
                 key={src}
                 src={src}
                 alt={`許秉鈞與蔡禹玟的回憶照片 ${index + 1}`}
+                loading="lazy"
               />
             )) : (
               <p className="loading-copy">照片準備中⋯</p>
